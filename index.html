@@ -10,25 +10,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico in the root directory -->
-
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-
     <body>
+
+        <!-- CONTENT FOR WEBSITE -->
+
+         <div class="tab_controller">
+            <ul>
+                <li><a href="#" class="menu_button">MENU</a></li>
+                <li><a href="#" class="suggestions_button">Related</a></li>
+                <li><a href="#" class="shopping_cart_button">Cart</a></li>
+            </ul>
+        </div>
        
        
             <header class="site_header">
-                 <img class="logo" src="img/conceptlogo.png">
-                <nav class="main_navigation">
-                        <ul>
-                            <li><a href="#">Kayaks</a></li>
-                            <li><a href="#">Paddles</a></li>
-                            <li><a href="#">Dry Gear</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Apparel</a></li>
-                        </ul>
+                <img class="logo" src="img/conceptlogo.png">
+                
+                <nav class="main_navigation active">
+                    <ul>
+                        <li><a href="#">Kayaks</a></li>
+                        <li><a href="#">Paddles</a></li>
+                        <li><a href="#">Dry Gear</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Apparel</a></li>
+                    </ul>
                 </nav>  
-                <div class =" phone.email.locate"> 
+                <div class ="phone_email_locate"> 
+                    <h4> 1888-555-1234</h4>
+                    <a href="#" id="email"> Email Us</a>
+                    <a href="#" id="locator"> Dealer Locator</a>
+
                 </div>
             </header>
 
@@ -37,14 +51,7 @@
                 <div class="product_image"> 
                     <img src="img/splashtop-aqua.png">
                 </div>
-                <div class="product_description">
-                    <h2>PRODUCT DETAILS</h2>
-                    <p>Concept Watersports Splash Top for Women boasts a large neck opening made of a tripanel polyurethane coated nylon with a hook-and-loop neck closure system. With plenty of ventilation around the neck and  2-ply waterproof, highly breathable, lightweight outer fabric, you can keep the light water off of your core without getting too hot or feeling stuffed in a dry top. Also features a sleeve pocket, sticky nylon waist with draw cord, stitched and taped seams, cone-shaped cuffs for added seal, and a reflective screen printed logo.</p>
-                    <h4>Available Colors: </h4>
-                    <p>Aqua or Berry</p>
-                    <h4>Available Sizes:</h4>
-                    <p>X-Small, Small, Medium, Large, and X-Large</p>
-                </div>
+               
                 <div class="suggestions">
                     <section class="rashguard"> 
                         <img src="img/rashguard-small.png">
@@ -58,25 +65,9 @@
                     </section>
                 </div>
 
-                <div class "purchase"> 
-                    <div class="cost_details">
-                        <h3> Women's Splash Top</h3>
-                        <section class="price_details">
-                            <ul>
-                                <li id=" msrp"><a>MSRP</a></li>
-                                <li id=" old_cost"><a>$99.99</a></li>
-                                <li id=" new_price"><a>$59.99</a></li>
-                            </ul>
-                        </section>
-                        <section class="discount"> 
-                            <p> 40% off on all Closeout Items</p>
-                        </section>
-                        <section class="share_button">
-                             <a href="#" class="rashguard_price">Share</a>
-                        </section>
-                    </div>
-
-                    <div class="selection_buttons">
+                 <div class="selection_buttons">
+                        <h2>Women's Splash Top $59.99</h2>
+                        
                         <section class="color_button">
                             <select name="select-choice" id="select-choice">
                             <option value="choice_1">Select a Color</option>   
@@ -107,7 +98,33 @@
                         </section>
                     </div>
                 </div>
-            </div>
+                 <div class="product_description">
+                
+                    <h3>PRODUCT DETAILS</h3>
+                    <p>Concept Watersports Splash Top for Women boasts a large neck opening made of a tripanel polyurethane coated nylon with a hook-and-loop neck closure system. With plenty of ventilation around the neck and  2-ply waterproof, highly breathable, lightweight outer fabric, you can keep the light water off of your core without getting too hot or feeling stuffed in a dry top. Also features a sleeve pocket, sticky nylon waist with draw cord, stitched and taped seams, cone-shaped cuffs for added seal, and a reflective screen printed logo.</p>
+                    <h5>Available Colors:</h5>
+                    <p>Aqua or Berry</p>
+                    <h5>Available Sizes:</h5>
+                    <p>X-Small, Small, Medium, Large, and X-Large</p>
+                </div>
+                <div class "purchase"> 
+                    <div class="cost_details">
+                        
+                        <section class="price_details">
+                            <ul>
+                                <li id="msrp"><a>MSRP</a></li>
+                                <li id="old_cost"><a>$99.99</a></li>
+                                <li id="new_price"><a>$59.99</a></li>
+                            </ul>
+                        </section>
+                        <section class="discount"> 
+                            <p> 40% off on all Closeout Items</p>
+                        </section>
+                        <section class="share_button">
+                             <a href="#">Share</a>
+                        </section>
+                    </div>
+                </div>
         </div>   
 
         <footer class="site_footer">
@@ -142,5 +159,8 @@
                 </nav>
         </footer>     
         <script src="js/script.js"></script>      
-    </body> 
+
+        
+        <script src="js/script.js"></script>
+    </body>
 </html>
